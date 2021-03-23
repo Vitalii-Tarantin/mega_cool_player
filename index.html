@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krutilki</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <video id="myaudio" controls="" loop="" autoplay="" muted>
+            <source src="./metallica_-_metallika_nothing_else_matters_(zf.fm).mp3" type="audio/mp3" />
+            The audio tag is not supported by your browser.
+        </video>
+        <div id="volume"></div>
+        <input type="range" max="1" step="0.01" id="volumeLevel" placeholder="asd" />
+    </div>
+    <div class="container">
+        <div id="rgbDiv"></div>
+        <div>
+            <div id="redDiv"></div>
+            <input type="number" min="0" max="255" id="redLevel" placeholder="red" style="border: 2px solid red; background: rgb(255, 150, 150);"/>
+            <div id="redGradient" class="gradient" style="border: 2px solid red; background: rgb(255, 0, 0);"></div>
+        </div>
+        <div>
+            <div id="greenDiv"></div>
+            <input type="number" min="0" max="255" id="greenLevel" placeholder="green" style="border: 2px solid green; background: rgb(150, 255, 150);"/>
+            <div id="greenGradient" class="gradient" style="border: 2px solid green; background: rgb(0, 255, 0);"></div>
+        </div>
+        <div>
+            <div id="blueDiv"></div>
+            <input type="number" min="0" max="255" id="blueLevel" placeholder="blue" style="border: 2px solid blue; background: rgb(150, 150, 255);"/>
+            <div id="blueGradient" class="gradient" style="border: 2px solid blue; background: rgb(0, 0, 255);"></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

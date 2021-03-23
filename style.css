@@ -1,0 +1,23 @@
+.container {
+    width: fit-content;
+    display: flex;
+    border: 2px solid grey;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.container * {
+    margin: 5px;
+}
+#rgbDiv {
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+}
+.gradient {
+    width: 200px;
+    height: 25px;
+}
+img {
+    will-change: transform;
+}
