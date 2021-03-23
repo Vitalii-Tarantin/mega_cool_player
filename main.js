@@ -160,4 +160,4 @@ blueLevel.oninput = () => {
 blueLevel.value  = 0;
 blueGradient.style.background = "linear-gradient(ti right, rgb(0,0,0), rgb(0,0,255))";
 
-rgnDiv.setAttribute("style", "background: rgb(0, 0,0)");
+rgbDiv.setAttribute("style", "background: rgb(0, 0, 0)");
