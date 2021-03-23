@@ -148,7 +148,7 @@ const blueControl = new Control(blueDiv, {
 });
 blueControl.onChange = (value) => {
     blueDiv.setAttribute("style", `background : rgba(0, 0, 255, ${value / 255}); border-radius: 50%`);
-    rgbDiv.setAttribute("style", `background : rgb(${redLevel.value}, ${blueLevel.value} ${value})`);
+    rgbDiv.setAttribute("style", `background : rgb(${redLevel.value}, ${greenLevel.value}, ${value})`);
     blueLevel.value = Math.round(value);
     setGradient();
     console.log("BLUE", Math.round(value));
